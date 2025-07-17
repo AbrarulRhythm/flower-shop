@@ -1,0 +1,865 @@
+/*
+Template Name: Flower Shpo
+Template URI: https://abrarulrhythm.github.io/assignment-01/
+GitHub Repository URI: https://github.com/AbrarulRhythm/assignment-01
+File Description: Main css file of the template
+*/
+
+/*------------------------------------------------------------------
+[Table of Contents]
+    + General
+        - Variable Define
+        - Common CSS
+        - Container Default CSS
+        - Grid System (Flexbox-based)
+        + Helpers Classes
+            - Font Size
+            - Font Weight
+            - Font Family
+            - Color
+            - Opacity
+            - Margin Top
+            - Margin Bottom
+            - Margin Left
+            - Margin Right
+            - Padding Top
+            - Padding Bottom
+            - Padding Left
+            - Padding Right
+    + Buttons
+    + Section Title
+    + Hero Section Style
+    + Featured Flowers Style
+    + Why Choose Us Style
+    + Offer Section Style
+    + Instagram Feed Section Style
+    + Newsletter Style
+    + Footer Style
+------------------------------------------------------------------*/
+
+/* [ General ] */
+/*================================================== */
+
+/*** Variable Define ***/
+:root {
+    /* Font Family */
+    --font-Lato: "Lato", sans-serif;
+
+    /* Color */
+    --primary-color: #E55473;
+    --primary-bg-light: rgba(229, 84, 115, 10%);
+    --primary-bg-light-2: rgba(229, 84, 115, 5%);
+    --dark-1: #272727;
+    --dark-2: rgba(39, 39, 39, 80%);
+    --dark-3: rgba(39, 39, 39, 60%);
+    --white-color: #FFF;
+    --body-bg: var(--white-color);
+    --white-color-2: rgba(255, 255, 255, 90%);
+    --white-color-3: rgba(255, 255, 255, 40%);
+    --color-pink: rgba(167, 33, 98, 15%);
+    --color-green: rgba(5, 151, 160, 15%);
+    --color-green-2: rgba(71, 125, 17, 15%);
+}
+
+/*** Common CSS ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-Lato);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: var(--dark-3);
+    background: var(--body-bg);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    color: var(--dark-1);
+}
+
+a {
+    color: var(--dark-3);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a,
+a:hover,
+a:focus,
+.button:focus,
+button,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol li,
+ul li {
+    list-style: none;
+}
+
+/* Selection */
+::-webkit-selection {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-shadow: none;
+}
+
+/*** Container Default CSS ***/
+.container {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*** Grid System (Flexbox-based) ***/
+/* Base Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* Base Column Padding */
+[class^="col"] {
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+
+/* Default (mobile - col-*) */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*** Helpers Classes ***/
+/* Font Size */
+.text-0 {
+    /* 11px */
+    font-size: 0.6875rem !important;
+}
+
+.text-xs {
+    /* 12px */
+    font-size: 0.75rem !important;
+}
+
+.text-sm {
+    /* 14px */
+    font-size: 0.875rem !important;
+}
+
+.text-base {
+    /* 16px */
+    font-size: 1rem !important;
+}
+
+.text-lg {
+    /* 18px */
+    font-size: 1.125rem !important;
+}
+
+.text-xl {
+    /* 20px */
+    font-size: 1.25rem !important;
+}
+
+.text-2xl {
+    /* 24px */
+    font-size: 1.5rem !important;
+}
+
+.text-3xl {
+    /* 28px */
+    font-size: 1.75rem !important;
+}
+
+.text-4xl {
+    /* 32px */
+    font-size: 2rem !important;
+}
+
+.text-5xl {
+    /* 36px */
+    font-size: 2.25rem !important;
+}
+
+.text-6xl {
+    /* 40px */
+    font-size: 2.5rem !important;
+}
+
+.text-7xl {
+    /* 44px */
+    font-size: 2.75rem !important;
+}
+
+.text-8xl {
+    /* 48px */
+    font-size: 3rem !important;
+}
+
+.text-9xl {
+    /* 52px */
+    font-size: 3.25rem !important;
+}
+
+.text-10xl {
+    /* 56px */
+    font-size: 3.5rem !important;
+}
+
+.text-11xl {
+    /* 60px */
+    font-size: 3.75rem !important;
+}
+
+.text-12xl {
+    /* 64px */
+    font-size: 4rem !important;
+}
+
+.text-13xl {
+    /* 72px */
+    font-size: 4.5rem !important;
+}
+
+.text-14xl {
+    /* 80px */
+    font-size: 5rem !important;
+}
+
+.text-15xl {
+    /* 84px */
+    font-size: 5.25rem !important;
+}
+
+.text-16xl {
+    /* 92px */
+    font-size: 5.75rem !important;
+}
+
+.text-17xl {
+    /* 96px */
+    font-size: 6rem !important;
+}
+
+.text-18xl {
+    /* 104px */
+    font-size: 6.5rem !important;
+}
+
+.text-19xl {
+    /* 112px */
+    font-size: 7rem !important;
+}
+
+.text-20xl {
+    /* 124px */
+    font-size: 7.75rem !important;
+}
+
+.text-21xl {
+    /* 128px */
+    font-size: 8rem !important;
+}
+
+.text-22xl {
+    /* 132px */
+    font-size: 8.25rem !important;
+}
+
+.text-23xl {
+    /* 144px */
+    font-size: 9rem !important;
+}
+
+.text-7xl,
+.text-8xl,
+.text-9xl,
+.text-10xl,
+.text-11xl,
+.text-12xl,
+.text-13xl,
+.text-14xl,
+.text-15xl,
+.text-16xl,
+.text-17xl,
+.text-18xl,
+.text-19xl,
+.text-20xl,
+.text-21xl,
+.text-22xl,
+.text-23xl {
+    line-height: 1.3;
+}
+
+/* Font Weight */
+.fw-100 {
+    font-weight: 100 !important;
+}
+
+.fw-200 {
+    font-weight: 200 !important;
+}
+
+.fw-300 {
+    font-weight: 300 !important;
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fw-800 {
+    font-weight: 800 !important;
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+/* Font Family */
+.font-Lato {
+    font-family: var(--font-Lato);
+}
+
+/* Color */
+.primary-color {
+    color: var(--primary-color);
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.primary-bg-light {
+    background-color: var(--primary-bg-light);
+}
+
+.primary-bg-light-2 {
+    background-color: var(--primary-bg-light-2);
+}
+
+.dark-1 {
+    color: var(--dark-1);
+}
+
+.dark-2 {
+    color: var(--dark-2);
+}
+
+.dark-3 {
+    color: var(--dark-3);
+}
+
+.white-color {
+    color: var(--white-color);
+}
+
+.white-color-2 {
+    color: var(--white-color-2);
+}
+
+.white-color-3 {
+    color: var(--white-color-3);
+}
+
+.color-pink {
+    color: var(--color-pink);
+}
+
+.pink-bg {
+    background-color: var(--color-pink);
+}
+
+.color-green {
+    color: var(--color-green);
+}
+
+.green-bg {
+    background-color: var(--color-green);
+}
+
+.color-green-2 {
+    color: var(--color-green-2);
+}
+
+.green-bg-2 {
+    background-color: var(--color-green-2);
+}
+
+/* Opacity */
+.opaciyt-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 0.1;
+}
+
+.opacity-2 {
+    opacity: 0.2;
+}
+
+.opacity-3 {
+    opacity: 0.3;
+}
+
+.opacity-4 {
+    opacity: 0.4;
+}
+
+.opacity-5 {
+    opacity: 0.5;
+}
+
+.opacity-6 {
+    opacity: 0.6;
+}
+
+.opacity-7 {
+    opacity: 0.7;
+}
+
+.opacity-8 {
+    opacity: 0.8;
+}
+
+.opacity-9 {
+    opacity: 0.9;
+}
+
+.opacity-10 {
+    opacity: 1;
+}
+
+/*** Margin Top ***/
+.fs-mt-0 {
+    /* 0px */
+    margin-top: 0rem !important;
+}
+
+.fs-mt-4 {
+    /* 4px */
+    margin-top: 0.25rem !important;
+}
+
+.fs-mt-8 {
+    /* 8px */
+    margin-top: 0.5rem !important;
+}
+
+.fs-mt-12 {
+    /* 12px */
+    margin-top: 0.75rem !important;
+}
+
+.fs-mt-16 {
+    /* 16px */
+    margin-top: 1rem !important;
+}
+
+.fs-mt-24 {
+    /* 24px */
+    margin-top: 1.5rem !important;
+}
+
+.fs-mt-48 {
+    /* 48px */
+    margin-top: 3rem !important;
+}
+
+/*** Margin Bottom ***/
+.fs-mb-0 {
+    /* 0px */
+    margin-bottom: 0rem !important;
+}
+
+.fs-mb-4 {
+    /* 4px */
+    margin-bottom: 0.25rem !important;
+}
+
+.fs-mb-8 {
+    /* 8px */
+    margin-bottom: 0.5rem !important;
+}
+
+.fs-mb-12 {
+    /* 12px */
+    margin-bottom: 0.75rem !important;
+}
+
+.fs-mb-16 {
+    /* 16px */
+    margin-bottom: 1rem !important;
+}
+
+.fs-mb-24 {
+    /* 24px */
+    margin-bottom: 1.5rem !important;
+}
+
+.fs-mb-48 {
+    /* 48px */
+    margin-bottom: 3rem !important;
+}
+
+/*** Margin Left ***/
+.fs-ml-0 {
+    /* 0px */
+    margin-left: 0rem !important;
+}
+
+.fs-ml-4 {
+    /* 4px */
+    margin-left: 0.25rem !important;
+}
+
+.fs-ml-8 {
+    /* 8px */
+    margin-left: 0.5rem !important;
+}
+
+.fs-ml-12 {
+    /* 12px */
+    margin-left: 0.75rem !important;
+}
+
+.fs-ml-16 {
+    /* 16px */
+    margin-left: 1rem !important;
+}
+
+.fs-ml-24 {
+    /* 24px */
+    margin-left: 1.5rem !important;
+}
+
+.fs-ml-48 {
+    /* 48px */
+    margin-left: 3rem !important;
+}
+
+/*** Margin Right ***/
+.fs-mr-0 {
+    /* 0px */
+    margin-right: 0rem !important;
+}
+
+.fs-mr-4 {
+    /* 4px */
+    margin-right: 0.25rem !important;
+}
+
+.fs-mr-8 {
+    /* 8px */
+    margin-right: 0.5rem !important;
+}
+
+.fs-mr-12 {
+    /* 12px */
+    margin-right: 0.75rem !important;
+}
+
+.fs-mr-16 {
+    /* 16px */
+    margin-right: 1rem !important;
+}
+
+.fs-mr-24 {
+    /* 24px */
+    margin-right: 1.5rem !important;
+}
+
+.fs-mr-48 {
+    /* 48px */
+    margin-right: 3rem !important;
+}
+
+/* ============================== PADDING ============================== */
+/*** Padding Top ***/
+.fs-pt-0 {
+    /* 0px */
+    padding-top: 0rem !important;
+}
+
+.fs-pt-4 {
+    /* 4px */
+    padding-top: 0.25rem !important;
+}
+
+.fs-pt-8 {
+    /* 8px */
+    padding-top: 0.5rem !important;
+}
+
+.fs-pt-12 {
+    /* 12px */
+    padding-top: 0.75rem !important;
+}
+
+.fs-pt-16 {
+    /* 16px */
+    padding-top: 1rem !important;
+}
+
+.fs-pt-24 {
+    /* 24px */
+    padding-top: 1.5rem !important;
+}
+
+.fs-pt-48 {
+    /* 48px */
+    padding-top: 3rem !important;
+}
+
+/*** Padding Bottom ***/
+.fs-pb-0 {
+    /* 0px */
+    padding-bottom: 0rem !important;
+}
+
+.fs-pb-4 {
+    /* 4px */
+    padding-bottom: 0.25rem !important;
+}
+
+.fs-pb-8 {
+    /* 8px */
+    padding-bottom: 0.5rem !important;
+}
+
+.fs-pb-12 {
+    /* 12px */
+    padding-bottom: 0.75rem !important;
+}
+
+.fs-pb-16 {
+    /* 16px */
+    padding-bottom: 1rem !important;
+}
+
+.fs-pb-24 {
+    /* 24px */
+    padding-bottom: 1.5rem !important;
+}
+
+.fs-pb-48 {
+    /* 48px */
+    padding-bottom: 3rem !important;
+}
+
+/*** Padding Left ***/
+.fs-pl-0 {
+    /* 0px */
+    padding-left: 0rem !important;
+}
+
+.fs-pl-4 {
+    /* 4px */
+    padding-left: 0.25rem !important;
+}
+
+.fs-pl-8 {
+    /* 8px */
+    padding-left: 0.5rem !important;
+}
+
+.fs-pl-12 {
+    /* 12px */
+    padding-left: 0.75rem !important;
+}
+
+.fs-pl-16 {
+    /* 16px */
+    padding-left: 1rem !important;
+}
+
+.fs-pl-24 {
+    /* 24px */
+    padding-left: 1.5rem !important;
+}
+
+.fs-pl-48 {
+    /* 48px */
+    padding-left: 3rem !important;
+}
+
+/*** Padding Right ***/
+.fs-pr-0 {
+    /* 0px */
+    padding-right: 0rem !important;
+}
+
+.fs-pr-4 {
+    /* 4px */
+    padding-right: 0.25rem !important;
+}
+
+.fs-pr-8 {
+    /* 8px */
+    padding-right: 0.5rem !important;
+}
+
+.fs-pr-12 {
+    /* 12px */
+    padding-right: 0.75rem !important;
+}
+
+.fs-pr-16 {
+    /* 16px */
+    padding-right: 1rem !important;
+}
+
+.fs-pr-24 {
+    /* 24px */
+    padding-right: 1.5rem !important;
+}
+
+.fs-pr-48 {
+    /* 48px */
+    padding-right: 3rem !important;
+}
+
+/* [ Buttons ] */
+/*================================================== */
+.button {
+    border: 0;
+    width: max-content;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1.25rem 2.625rem;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.button:hover {
+    -webkit-box-shadow: inset 0px 0px 135px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 135px rgba(0, 0, 0, 0.25);
+}
+
+/* [ Section Title ] */
+/*================================================== */
+
+/* [ Hero Section Style ] */
+/*================================================== */
+
+/* [ Featured Flowers Style ] */
+/*================================================== */
+
+/* [ Why Choose Us Style ] */
+/*================================================== */
+
+/* [ Offer Section Style ] */
+/*================================================== */
+
+/* [ Instagram Feed Section Style ] */
+/*================================================== */
+
+/* [ Newsletter Style ] */
+/*================================================== */
+
+/* [ Footer Style ] */
+/*================================================== */
