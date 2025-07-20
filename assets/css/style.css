@@ -935,6 +935,18 @@ p {
 
 /* [ Offer Section Style ] */
 /*================================================== */
+.offer .row {
+    align-items: center;
+}
+
+.offer .offer-content {
+    text-align: center;
+}
+
+.offer .offer-image img {
+    display: block;
+    margin: auto;
+}
 
 /* [ Instagram Feed Section Style ] */
 /*================================================== */

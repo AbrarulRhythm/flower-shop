@@ -311,6 +311,12 @@
     .wcu-contetn .row .col-12:not(:last-child) {
         margin-bottom: 24px;
     }
+
+    /* [ Offer Section Style ] */
+    /*================================================== */
+    .offer .row .col-12:not(:first-child) {
+        margin-top: 1.5rem;
+    }
 }
 
 @media screen and (max-width:767px) {
