@@ -75,7 +75,7 @@ body {
 
 body {
     font-family: var(--font-Lato);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     position: relative;
     height: 100%;
@@ -126,6 +126,15 @@ ul li {
 
 p {
     line-height: 1.6;
+}
+
+.section-pt {
+    padding-top: 7.5rem;
+}
+
+.section-ptb {
+    padding-top: 7.5rem;
+    padding-bottom: 6rem;
 }
 
 /* Selection */
@@ -847,6 +856,14 @@ p {
 
 /* [ Section Title ] */
 /*================================================== */
+.section-title {
+    max-width: 590px;
+    margin: auto;
+    text-align: center;
+}
+
+/* [ Hero Section Style ] */
+/*================================================== */
 .hero-area {
     background-color: var(--primary-bg-light);
     padding-top: 40px;
@@ -866,11 +883,46 @@ p {
     width: 90%;
 }
 
-/* [ Hero Section Style ] */
-/*================================================== */
-
 /* [ Featured Flowers Style ] */
 /*================================================== */
+.featured-flower-wrap {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.featured-flower-image {
+    padding-top: 48px;
+    border-radius: 300px 300px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.featured-flower-image img {
+    display: block;
+    /* margin: auto; */
+    max-width: 100%;
+    object-fit: cover;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.featured-flower-image:hover img {
+    transform: scale(1.1);
+}
+
+.featured-flower-wrap h5 a {
+    color: var(--dark-1);
+}
+
+.featured-flower-wrap h5 a:hover {
+    color: var(--primary-color);
+}
 
 /* [ Why Choose Us Style ] */
 /*================================================== */
