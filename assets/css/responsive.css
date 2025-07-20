@@ -264,10 +264,13 @@
 
 @media screen and (max-width:991px) {
 
-    /* [ Section Title ] */
-    /*================================================== */
     .section-pt {
         padding-top: 5.625rem;
+    }
+
+    .section-ptb {
+        padding-top: 5.625rem;
+        padding-bottom: 3.5rem;
     }
 
     /* [ Hero Section Style ] */
@@ -297,6 +300,16 @@
 
     .featured-flower-image img {
         width: 70%;
+    }
+
+    /* [ Why Choose Us Style ] */
+    /*================================================== */
+    .wcu-contetn {
+        padding: 48px 24px;
+    }
+
+    .wcu-contetn .row .col-12:not(:last-child) {
+        margin-bottom: 24px;
     }
 }
 

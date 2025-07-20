@@ -926,6 +926,12 @@ p {
 
 /* [ Why Choose Us Style ] */
 /*================================================== */
+.wcu-contetn {
+    background-color: rgba(39, 39, 39, 5%);
+    border-radius: 8px;
+    padding: 86px 80px;
+    text-align: center;
+}
 
 /* [ Offer Section Style ] */
 /*================================================== */
