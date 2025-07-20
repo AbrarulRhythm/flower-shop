@@ -956,6 +956,36 @@ p {
 
 /* [ Newsletter Style ] */
 /*================================================== */
+.newsletter .row {
+    justify-content: center;
+}
+
+.newsletter-wrapper {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('../images/rectangle9.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.newsletter-form form {
+    display: flex;
+}
+
+.newsletter-form form input[type="email"] {
+    width: 100%;
+    padding: 22px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.newsletter-form form input[type="submit"] {
+    margin-left: 16px;
+}
 
 /* [ Footer Style ] */
 /*================================================== */
