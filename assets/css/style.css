@@ -989,3 +989,21 @@ p {
 
 /* [ Footer Style ] */
 /*================================================== */
+.footer {
+    background-color: #111010;
+    text-align: center;
+}
+
+.footer .footer-logo,
+.footer-desc {
+    color: var(--white-color);
+}
+
+.footer-desc {
+    max-width: 624px;
+    margin: auto;
+}
+
+.copyright {
+    color: var(--white-color-3);
+}
